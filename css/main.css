@@ -63,3 +63,37 @@ nav {
   font-size: 0.75em;
   vertical-align: top;
 }
+
+#gradient {
+  background-image: url("../imagens/gradient.jpg");
+  background-position: center;
+  background-size: cover;
+  float: left;
+  height: 375px;
+}
+
+#gradient-text {
+  width: 30%;
+  margin-right: 5%;
+  float: right;
+  color: white;
+  text-align: justify;
+}
+
+#gradient-text h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+    #gradient-text {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 646px) {
+    #gradient-text {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+}
