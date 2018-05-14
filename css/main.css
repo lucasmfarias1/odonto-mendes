@@ -101,7 +101,7 @@ nav {
   box-sizing: border-box;
   display: table-cell;
   width: 50%;
-  padding: 2%;
+  padding: 0 2%;
   height: 330px;
   color: #2a7acf;
   font-size: 0.9em;
@@ -152,13 +152,12 @@ nav {
   #tratamentos {
         display: block;
         width: 100%;
-        float: left;
   }
 
   #foto-tratamentos {
         display: block;
         width: 100%;
-        float: left;
+        height: 300px;
   }
 }
 
