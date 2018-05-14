@@ -21,8 +21,8 @@ nav {
 }
 
 #mp {
-  margin: 0;
-  padding: 14px;
+  margin: 2px 0 0 0;
+  padding: 14px 0;
 }
 
 #mp li {
@@ -32,7 +32,7 @@ nav {
 #mp a {
   color: #2a7acf;
   text-decoration: none;
-  padding: 11px 6px;
+  padding: 14px 6px;
 }
 
 #mp a:hover {
@@ -56,6 +56,7 @@ nav {
 
 #logo {
   width: 40px;
+  position: absolute;
 }
 
 #endr-midia {
@@ -64,17 +65,21 @@ nav {
   vertical-align: top;
 }
 
+/* Primeira linha */
+
 #gradient {
   background-image: url("../imagens/gradient.jpg");
   background-position: center;
   background-size: cover;
   float: left;
-  height: 375px;
+  height: auto;
 }
 
 #gradient-text {
-  width: 30%;
-  margin-right: 5%;
+  box-sizing: border-box;
+  width: 45%;
+  margin: 50px auto;
+  padding: 0 8%;
   float: right;
   color: white;
   text-align: justify;
@@ -82,18 +87,90 @@ nav {
 
 #gradient-text h2 {
   text-align: center;
+  margin: 0;
 }
+
+/* Segunda linha */
+
+#linha2 {
+  display: table;
+  width: 100%;
+}
+
+#tratamentos {
+  box-sizing: border-box;
+  display: table-cell;
+  width: 50%;
+  padding: 2%;
+  height: 330px;
+  color: #2a7acf;
+  font-size: 0.9em;
+}
+
+#tratamentos h2 {
+  text-align: center;
+}
+
+#tratamentos p {
+  margin-left: 15px;
+}
+
+#foto-tratamentos {
+  display: table-cell;
+  width: 50%;
+  background-image: url("../imagens/sorriso.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 @media only screen and (max-width: 880px) {
     #gradient-text {
-        width: 40%;
+      padding: 0 3%;
+      width: 50%;
     }
 }
 
 @media only screen and (max-width: 646px) {
-    #gradient-text {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0 5%;
-    }
+
+}
+
+@media only screen and (max-width: 420px) {
+  #endr-midia > span {
+    display: block;
+  }
+
+  #gradient-text {
+    width: auto;
+  }
+  #gradient {
+    background-position: right;
+    background-size: 200%;
+  }
+
+  #tratamentos {
+        display: block;
+        width: 100%;
+        float: left;
+  }
+
+  #foto-tratamentos {
+        display: block;
+        width: 100%;
+        float: left;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #mp {
+    margin-right: 10px;
+  }
+  #mp a {
+    padding: 14px 1px;
+  }
+}
+
+@media only screen and (max-width: 496px) {
+
 }
