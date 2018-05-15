@@ -78,7 +78,7 @@ nav {
 #gradient-text {
   box-sizing: border-box;
   width: 45%;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 0 8%;
   float: right;
   color: white;
@@ -101,9 +101,12 @@ nav {
   box-sizing: border-box;
   display: table-cell;
   width: 50%;
-  padding: 0 2%;
+  padding: 5% 2%;
   color: #2a7acf;
   font-size: 0.9em;
+  background-image: url("../imagens/tratamentos.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #tratamentos h2 {
@@ -122,20 +125,74 @@ nav {
   background-size: cover;
 }
 
+/* Terceira linha */
+
+#linha3 {
+  height: 300px;
+  border: 1px solid red;
+}
+
+/* Rodape */
+footer {
+  display: table;
+  width: 100%;
+  background-color: #e4f0fc;
+  text-align: center;
+  color: #2a7acf;
+  font-size: 0.75em;
+}
+
+#rodape-esquerda {
+  display: table-cell;
+  box-sizing: border-box;
+  padding: 5%;
+  width: 50%;
+  text-align: left;
+}
+
+#rodape-dados {
+  float: left;
+  width: 50%;
+}
+
+#rodape-dados span {
+  display: block;
+}
+
+#rodape-logo {
+  float: left;
+  width: 40%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border-right: 1px solid blue;
+}
+
+#rodape-logo img {
+  width: 40px;
+}
+
+#rodape-direita {
+  display: table-cell;
+  width: 50%;
+  background-image: url("../imagens/mapa.jpg");
+  background-position: center;
+  background-size: 90%;
+}
+
 
 
 @media only screen and (max-width: 880px) {
-    #gradient-text {
-      padding: 0 3%;
-      width: 50%;
-    }
+  #gradient-text {
+    padding: 0 3%;
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 646px) {
 
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
   #endr-midia > span {
     display: block;
   }
@@ -143,32 +200,46 @@ nav {
   #gradient-text {
     width: auto;
   }
+
   #gradient {
     background-position: right;
     background-size: 200%;
   }
 
   #tratamentos {
-        display: block;
-        width: 100%;
+    display: block;
+    width: 100%;
   }
 
   #foto-tratamentos {
-        display: block;
-        width: 100%;
-        height: 300px;
+    display: none;
+    width: 100%;
+    height: 300px;
   }
-}
 
-@media only screen and (max-width: 350px) {
   #mp {
     margin-right: 10px;
   }
   #mp a {
     padding: 14px 1px;
   }
+
+  #rodape-esquerda {
+    display: block;
+    width: 100%;
+    height: 130px;
+  }
+  #rodape-direita {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
 }
 
-@media only screen and (max-width: 496px) {
+
+@media only screen and (max-width: 350px) {
+}
+
+@media only screen and (max-width: 500px) {
 
 }
