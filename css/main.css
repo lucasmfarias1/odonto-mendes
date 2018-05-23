@@ -43,7 +43,7 @@ ul#mp li {
 }
 
 ul a {
-  border-radius: 6px 6px 0 0;
+  /* border-radius: 6px 6px 0 0; */
   font-weight: 400;
   color: #2a7acf;
   text-decoration: none;
