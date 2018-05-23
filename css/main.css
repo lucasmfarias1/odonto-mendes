@@ -1,4 +1,9 @@
+html {
+  background-color: #f8f8ff;
+}
+
 body {
+  background-color: #fff;
   font-size: 100%;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -154,14 +159,16 @@ footer {
 #rodape-esquerda {
   display: table-cell;
   box-sizing: border-box;
-  padding: 5%;
+  padding: 5% 1%;
   width: 50%;
   text-align: left;
 }
 
 #rodape-dados {
+  box-sizing: border-box;
   float: left;
   width: 50%;
+  padding-left: 1%;
 }
 
 #rodape-dados span {
@@ -171,13 +178,15 @@ footer {
 #rodape-logo {
   float: left;
   width: 40%;
-  margin-right: 10px;
   box-sizing: border-box;
-  border-right: 1px solid blue;
+  border-right: 1px solid #2a7acf;
 }
 
 #rodape-logo img {
+  float: right;
+  padding-right: 2%;
   width: 125px;
+  max-width: 100%;
 }
 
 #rodape-direita {
@@ -195,10 +204,6 @@ footer {
     padding: 0 3%;
     width: 50%;
   }
-}
-
-@media only screen and (max-width: 646px) {
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -245,10 +250,5 @@ footer {
   }
 }
 
-
-@media only screen and (max-width: 350px) {
-}
-
 @media only screen and (max-width: 500px) {
-
 }
