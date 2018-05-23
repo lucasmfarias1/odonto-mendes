@@ -14,8 +14,9 @@ body {
 }
 
 header {
-  padding: 5px 15px;
+  padding: 5px 10px;
   color: #2a7acf;
+  min-height: 85px;
 }
 
 /* Barra de navegação */
@@ -23,29 +24,39 @@ nav {
   font-size: 0.9em;
   float: right;
   clear: right;
+  margin-top: 19px;
 }
 
-#mp {
+ul#mp {
   margin: 2px 0 0 0;
   padding: 14px 0;
+  font-size: 1.2em;
 }
 
-#mp li {
+ul#mp li {
   display: inline-block;
 }
 
-#mp a {
+ul a {
+  border-radius: 6px 6px 0 0;
+  font-weight: 400;
   color: #2a7acf;
   text-decoration: none;
-  padding: 14px 6px;
+  padding: 15px 10px;
 }
 
-#mp a:hover {
+ul#mp a:hover {
   background-color: #2a7acf;
   color: #fff;
 }
 
 /* CLASS */
+
+.ativo {
+  font-weight: 700;
+  background-color: #2a7acf;
+  color: #fff;
+}
 
 .icone-midia {
   height: 20px;
@@ -60,7 +71,7 @@ nav {
 }
 
 #logo {
-  width: 125px;
+  width: 175px;
   position: absolute;
 }
 
@@ -199,14 +210,23 @@ footer {
 
 
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1000px) {
   #gradient-text {
     padding: 0 3%;
-    width: 50%;
+    width: 60%;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 650px) {
+  #mp {
+    display: none;
+  }
+
+  #logo {
+    left: 0.5%;
+    width: 150px;
+  }
+
   #endr-midia > span {
     display: block;
   }
@@ -235,6 +255,7 @@ footer {
     margin-right: 10px;
   }
   #mp a {
+    font-weight: 400;
     padding: 14px 1px;
   }
 
