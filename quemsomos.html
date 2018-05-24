@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Mendes Odontologia</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img id="logo" src="imagens/logo2.png" alt="Mendes Odonto">
+      </a>
+      <div id="direita-header">
+
+        <div id="endr-midia">
+          <span>R. Berta Craveiro Lopes, 57,</span>
+          <span>São Vicente/SP,</span>
+          <span>(13)98106-5625</span>
+          <a target="_blank" href="https://www.facebook.com/consultoriomendes/"><img src="imagens/facebook.png" alt="" class="icone-midia"></a>
+          <a target="_blank" href="https://www.instagram.com/odontologia.mendes/"><img src="imagens/instagram.png" alt="" class="icone-midia"></a>
+        </div>
+
+        <nav>
+          <ul id="mp">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="quemsomos.html" class="ativo">Quem somos</a> </li>
+            <li><a href="tratamentos.html">Tratamentos</a> </li>
+            <li><a href="#">Contato</a> </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+
+    <main id="pagina-quemsomos">
+      <div id="descricao">
+        <h1>Mendes Odontologia Especializada</h1>
+        <h2>Dr. André Mendes Lopes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <img id="dentista" src="imagens/andremendes.jpg" alt="Doutor André Mendes Lopes">
+
+    </main>
+    <div id="album">
+      <h3>Fotos</h3>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <!-- Trigger the Modal -->
+      <img class="myImg" src="imagens/clinica1.jpeg" alt="Clínica do dentista Dr. Mendes" width="300" height="200">
+      <img class="myImg" src="imagens/clinica2.jpeg" alt="Clínica do dentista Dr. Mendes" width="300" height="200">
+      <img class="myImg" src="imagens/clinica3.jpeg" alt="Clínica do dentista Dr. Mendes" width="300" height="200">
+      <img class="myImg" src="imagens/clinica4.jpeg" alt="Clínica do dentista Dr. Mendes" width="300" height="200">
+
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="rodape-esquerda">
+        <div id="rodape-logo">
+          <img src="imagens/logo2.png" alt="">
+        </div>
+        <div id="rodape-dados">
+          <span>R. Berta Craveiro Lopes, 57</span>
+          <span>São Vicente/SP</span>
+          <span>(13)98106-5625</span>
+          <span>odontologiamendes@outlook.com</span>
+          <a target="_blank" href="https://www.facebook.com/consultoriomendes/"><img src="imagens/facebook.png" alt="" class="icone-midia"></a>
+          <a target="_blank" href="https://www.instagram.com/odontologia.mendes/"><img src="imagens/instagram.png" alt="" class="icone-midia"></a>
+        </div>
+      </div>
+      <div id="rodape-direita">
+      </div>
+
+      <script>
+        function initMap() {
+          var uluru = {lat: -23.9628744, lng: -46.3745933};
+          var map = new google.maps.Map(document.getElementById('rodape-direita'), {
+            zoom: 18,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.myImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.myImg').click(function(){
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxI8eQNGQrDqs10k4xqToZ4Fk5FGVSh6s&callback=initMap">
+      </script>
+
+    </footer>
+  </body>
+</html>
