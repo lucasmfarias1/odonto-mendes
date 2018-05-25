@@ -178,6 +178,13 @@ ul#mp a:hover {
   margin-left: 15px;
 }
 
+#tratamentos a {
+  float: right;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #2a7acf;
+}
+
 #foto-tratamentos {
   display: table-cell;
   width: 50%;
@@ -311,10 +318,19 @@ div#album {
 }
 
 div#album img.myImg {
-  width: 24%;
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0;
 }
 
 
+
+@media only screen and (max-width: 1000px) {
+  div#album img.myImg {
+    width: 33.33%;
+  }
+}
 
 /* Modal */
 /* Style the Image Used to Trigger the Modal */

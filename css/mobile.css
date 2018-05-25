@@ -56,6 +56,16 @@
     height: 200px;
   }
 
+  /* Modal */
+  div#album {
+    margin: 0;
+    padding: 0;
+  }
+
+  div#album img.myImg {
+    width: 50%;
+  }
+
   /* Nav Mobile */
   #myTopnav {
     display: block;
