@@ -152,7 +152,7 @@ ul#mp a:hover {
   color: #2a7acf;
   text-align: justify;
   position: relative;
-  top: 3.5em;
+  top: 2em;
 }
 
 #gradient-text h2 {
@@ -162,6 +162,13 @@ ul#mp a:hover {
 
 #gradient-text h3 {
   text-align: center;
+}
+
+#gradient-text p {
+  text-align: center;
+  font-weight: 700;
+  border-top: 1px solid #2a7acf;
+  padding-top: 0.8em;
 }
 
 #gradient-text a {
@@ -205,6 +212,7 @@ ul#mp a:hover {
 
 #tratamentos p {
   margin-left: 15px;
+  color: #000;
 }
 
 #tratamentos a {
@@ -346,10 +354,14 @@ main#pagina-quemsomos p {
   color: #000;
 }
 
+main#pagina-quemsomos ul {
+  color: #000;
+}
+
 main#pagina-quemsomos div#descricao {
   box-sizing: border-box;
   float: left;
-  width: 65%;
+  width: 100%;
   padding-right: 5%;
 }
 
