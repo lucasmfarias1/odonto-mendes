@@ -52,7 +52,7 @@ ul a {
   font-weight: 400;
   color: #2a7acf;
   text-decoration: none;
-  padding: 15px 10px;
+  padding: 15px 7px;
 }
 
 ul#mp a:hover {
@@ -120,7 +120,7 @@ ul#mp a:hover {
 }
 
 #logo {
-  width: 175px;
+  width: 240px;
   position: absolute;
 }
 
@@ -306,7 +306,7 @@ footer {
 #rodape-logo img {
   float: right;
   padding-right: 2%;
-  width: 125px;
+  width: 185px;
   max-width: 100%;
 }
 
