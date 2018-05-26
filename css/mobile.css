@@ -18,11 +18,29 @@
 
   #gradient-text {
     width: auto;
+    top: 1em;
+    font-size: 1.5em;
   }
 
   #linha1 {
     background-position: right;
-    background-size: 200%;
+    background-size: cover;
+  }
+
+  #linha2 {
+    background-image: url("../imagens/tratamentos.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #linha3 {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #linha3-texto {
+    width: 60%;
   }
 
   #tratamentos {
