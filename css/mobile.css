@@ -111,7 +111,7 @@
     text-align: left;
   }
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 380px) {
   #logo {
     top: 18px;
     width: 155px;
