@@ -17,9 +17,14 @@
   }
 
   #gradient-text {
-    width: auto;
-    top: 1em;
+    width: 90%;
+    padding: 1% 4%;
+    /* color: #fff; */
+    color: #0a5aaf;
+    float: none;
+    top: 0.3em;
     font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   #linha1 {
