@@ -87,7 +87,11 @@
   /* Modal */
   div#album {
     margin: 0;
-    padding: 0;
+    padding: 0 0 4% 0;
+  }
+
+  div#album h3 {
+    padding: 0 3%;
   }
 
   div#album img.myImg {
