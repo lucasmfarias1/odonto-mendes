@@ -518,3 +518,11 @@ main#pagina-contato input[type="submit"]:hover {
         width: 100%;
     }
 }
+
+#aumentar-fonte, #diminuir-fonte {
+  float: right;
+  width: 32px;
+  padding: 2px;
+  background: #fff;
+  border: 1px solid black;
+}
