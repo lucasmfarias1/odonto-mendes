@@ -17,7 +17,7 @@ header {
   padding: 5px 10px;
   color: #1a4b7f;
   min-height: 85px;
-  border-bottom: 2px solid #2a7acf;
+  border-bottom: 2px solid #1a4b7f;
 }
 
 main {
@@ -199,7 +199,7 @@ ul#mp a:hover {
   display: table-cell;
   width: 50%;
   padding: 1em;
-  color: #2a7acf;
+  color: #1a4b7f;
   font-size: 0.9em;
   /* background-image: url("../imagens/tratamentos.jpg");
   background-position: center;
