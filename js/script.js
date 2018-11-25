@@ -17,10 +17,3 @@ $("#aumentar-fonte").click(function() {
 
 $("#diminuir-fonte").click(function() {
 });
-
-
-// ul#mp {
-//   margin: 2px 0 0 0;
-//   padding: 14px 0;
-//   font-size: 1.2em;
-// }
